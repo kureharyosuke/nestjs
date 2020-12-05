@@ -13,6 +13,6 @@ export class AppController {
   @Get('/hello') //컨트롤러가 url 요청
   // sayhello function(함수)을 실행
   sayHello(): string {
-    return 'Hello NEST.js controller';
+    return this.appService.getHi();
   }
 }
